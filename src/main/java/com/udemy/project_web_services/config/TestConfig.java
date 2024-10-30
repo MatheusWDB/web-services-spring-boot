@@ -7,7 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import com.udemy.project_web_services.models.User;
+import com.udemy.project_web_services.entities.User;
 import com.udemy.project_web_services.repositories.UserRepository;
 
 @Configuration
