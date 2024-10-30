@@ -1,11 +1,11 @@
-package com.udemy.project_web_services.Controllers;
+package com.udemy.project_web_services.controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.udemy.project_web_services.Models.User;
+import com.udemy.project_web_services.models.User;
 
 @RestController
 @RequestMapping("/users")

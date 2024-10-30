@@ -1,4 +1,4 @@
-package com.udemy.project_web_services.Models;
+package com.udemy.project_web_services.models;
 
 import java.io.Serializable;
 
