@@ -15,7 +15,6 @@ A aplicação consiste em uma simulação de vendas, onde podemos buscar e injet
 
 
 # Tecnologias utilizadas
-## Back end
 - Java
 - Spring Boot
 - JPA / Hibernate
