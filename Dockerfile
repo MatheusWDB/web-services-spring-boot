@@ -1,3 +1,5 @@
+# syntax = docker/dockerfile:1.2
+
 FROM ubuntu:latest AS build
 
 RUN apt-get update
@@ -8,7 +10,13 @@ COPY . .
 
 RUN  apt-get install maven -y
 
-RUN mvn clean install -X
+RUN --mount=type=secret,id=DB_PASS,dst=/etc/secrets/DB_PASS cat /etc/secrets/DB_PASS
+
+RUN --mount=type=secret,id=DB_URL,dst=/etc/secrets/DB_URL cat /etc/secrets/DB_URL
+
+RUN --mount=type=secret,id=DB_USER,dst=/etc/secrets/DB_USER cat /etc/secrets/DB_USER
+
+RUN mvn clean install
 
 FROM openjdk:21-jdk-slim
 
